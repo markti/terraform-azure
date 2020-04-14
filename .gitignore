@@ -27,3 +27,11 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# local only
+local.sh
+scripts/az_fn_synctrigger.sh
+scripts/delete_blob.sh
+
+# .DS_Store files
+**/.DS_Store

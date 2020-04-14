@@ -1,0 +1,1 @@
+cp -f ../samples/deployments/Archive4.zip ../samples/deployments/CurrentDeployment.zip
