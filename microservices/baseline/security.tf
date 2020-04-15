@@ -4,6 +4,7 @@ module "service_principal" {
   
   source                        = "../../security/identity/backend_account"
   name                          = var.name
+  application_id_uri            = "api://${var.name}"
 
 }
 
