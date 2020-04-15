@@ -33,11 +33,11 @@ output "code_storage_sas" {
 output "client_secret" {
   value = module.service_principal.client_secret
 }
-/*
+
 output "apim_name" {
   value = module.api_management.name
 }
 // there should only be one
 output "apim_public_ip_address" {
   value = module.api_management.public_ip_addresses[0]
-}*/
+}
