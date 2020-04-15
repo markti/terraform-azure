@@ -30,9 +30,7 @@ output "code_storage_container" {
 output "code_storage_sas" {
   value = data.azurerm_storage_account_sas.code_storage.sas
 }
-output "client_secret" {
-  value = module.service_principal.client_secret
-}
+
 
 output "apim_name" {
   value = module.api_management.name

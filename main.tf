@@ -68,9 +68,6 @@ output "patient_function_key" {
 output "patient_function_name" {
     value = module.lab_microservices.patient_function_name
 }
-output "webapi_client_secret" {
-    value = module.lab_microservices.webapi_client_secret
-}
 
 output "apim_name" {
     value = module.lab_microservices.apim_name

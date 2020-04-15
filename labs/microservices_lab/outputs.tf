@@ -1,8 +1,4 @@
 
-output "webapi_client_secret" {
-    value = module.microservice_hub.client_secret
-}
-
 output "usdl_function_key" {
     value = module.microservice_usdl.function_key
 }

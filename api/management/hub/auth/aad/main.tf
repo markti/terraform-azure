@@ -8,7 +8,7 @@ resource "azurerm_api_management_authorization_server" "apim_auth" {
   authorization_endpoint       = "https://login.microsoftonline.com/${var.tenant_id}/oauth2/v2.0/authorize"
   client_id                    = var.client_id
   client_secret                = var.client_secret
-  client_registration_endpoint = "https://login.microsoftonline.com/${var.tenant_id}/oauth2/v2.0/authorize"
+  client_registration_endpoint = "http://localhost"
   token_endpoint               = "https://login.microsoftonline.com/${var.tenant_id}/oauth2/v2.0/token"
 
   default_scope                = var.default_scope

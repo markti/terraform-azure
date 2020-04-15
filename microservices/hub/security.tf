@@ -22,10 +22,3 @@ module "terraform_admin" {
   application_id        = var.terraform_application_id
 
 }
-
-module "service_principal" {
-  
-  source                        = "../../security/identity/backend_account"
-  name                          = "${var.app_name}-${var.env_name}-webapi"
-
-}
