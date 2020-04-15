@@ -12,7 +12,7 @@ module "api_hosting_plan" {
   location              = var.location
 
 }
-
+/*
 module "api_management" {
   
   source                = "../../api/management/hub/apim"
@@ -67,3 +67,4 @@ module "subscription_web" {
   user_id               = module.user_admin.id
 
 }
+*/
