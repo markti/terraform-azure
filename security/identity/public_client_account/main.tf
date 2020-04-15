@@ -1,8 +1,9 @@
 
 module "app" {
   
-  source  = "../../aad/app"
-  name    = var.name
+  source      = "../../aad/app"
+  name        = var.name
+  reply_urls  = [ var.redirect_uri ] 
 
 }
 module "sp" {
