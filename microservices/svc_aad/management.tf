@@ -12,5 +12,6 @@ module "fn_apim_api" {
   function_name         = module.api_fn.name
   function_key          = module.api_fn.function_key
   scope                 = var.scope
+  product_id            = var.product_id
 
 }
