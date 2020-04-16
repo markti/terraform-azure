@@ -11,3 +11,4 @@ variable "primary_protocol" {
   default = "https"
 }
 variable "scope" { }
+variable "product_id" { }

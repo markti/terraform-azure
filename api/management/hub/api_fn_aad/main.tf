@@ -13,6 +13,7 @@ module "fn_apim_api_aad" {
   primary_protocol      = var.primary_protocol
   backend_name          = module.fn_apim_backend.name
   scope                 = var.scope
+  product_id            = var.product_id
 
 }
 

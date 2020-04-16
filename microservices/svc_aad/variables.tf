@@ -20,3 +20,4 @@ variable "apim_name" { }
 variable "api_path" { }
 variable "apim_ip_address" { }
 variable "scope" { }
+variable "product_id" { }

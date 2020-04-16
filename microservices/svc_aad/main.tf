@@ -29,6 +29,7 @@ module "api_fn" {
   worker_runtime                = var.worker_runtime
   app_settings                  = local.combined_settings
   apim_ip_address               = var.apim_ip_address
+  product_id                    = var.product_id
 
 }
 

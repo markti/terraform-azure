@@ -43,3 +43,10 @@ resource "azurerm_api_management_api_policy" "api_policy" {
 </policies>
 XML
 }
+
+resource "azurerm_api_management_product_api" "product_link" {
+  api_name            = azurerm_api_management_api.api.name
+  product_id          = var.product_id
+  api_management_name = var.apim_name
+  resource_group_name = var.resource_group_name
+}
