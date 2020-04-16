@@ -11,6 +11,6 @@ module "fn_apim_api" {
   path                  = var.api_path
   function_name         = module.api_fn.name
   function_key          = module.api_fn.function_key
-  client_id             = 
+  client_id             = var.client_id
 
 }
