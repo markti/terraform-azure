@@ -12,6 +12,7 @@ module "fn_apim_api_aad" {
   path                  = var.path
   primary_protocol      = var.primary_protocol
   backend_name          = module.fn_apim_backend.name
+  client_id             = var.client_id
 
 }
 
