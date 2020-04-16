@@ -19,4 +19,4 @@ variable "deployment_package_filename" { }
 variable "apim_name" { }
 variable "api_path" { }
 variable "apim_ip_address" { }
-variable "client_id" { }
+variable "scope" { }

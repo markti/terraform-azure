@@ -9,4 +9,4 @@ variable "primary_protocol" {
   type = string
   default = "https"
 }
-variable "client_id" { }
+variable "scope" { }

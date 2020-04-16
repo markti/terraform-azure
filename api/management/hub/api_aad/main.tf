@@ -24,7 +24,7 @@ resource "azurerm_api_management_api_policy" "api_policy" {
       <openid-config url="https://login.microsoftonline.com/${data.azurerm_client_config.current.tenant_id}/.well-known/openid-configuration" />
       <required-claims>
           <claim name="aud">
-              <value>${var.client_id}</value>
+              <value>${var.scope}</value>
           </claim>
       </required-claims>
     </validate-jwt>
