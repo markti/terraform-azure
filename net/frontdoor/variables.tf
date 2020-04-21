@@ -14,5 +14,5 @@ variable "app_name" { }
 variable "env_name" { }
 
 variable "frontend_hostname" { }
-variable "backend_hostname" { }
+variable "backend_host_header" { }
 variable "backend_fqdn" { }

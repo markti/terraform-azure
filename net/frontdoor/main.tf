@@ -26,7 +26,7 @@ resource "azurerm_frontdoor" "frontdoor" {
   backend_pool {
     name = "PrimaryBackend"
     backend {
-      host_header = var.backend_hostname
+      host_header = var.backend_host_header
       address     = var.backend_hostname
       http_port   = 80
       https_port  = 443
