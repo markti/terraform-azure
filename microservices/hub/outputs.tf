@@ -20,6 +20,9 @@ output "instrumentation_key" {
 output "keyvault_id" {
   value = module.keyvault.id
 }
+output "keyvault_uri" {
+  value = module.keyvault.uri
+}
 
 output "code_storage_account_name" {
   value = module.code_storage.name
