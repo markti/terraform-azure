@@ -11,7 +11,7 @@ module "fn_apim_api" {
   path                  = var.api_path
   function_name         = module.api_fn.name
   function_key          = module.api_fn.function_key
-  scope                 = var.scope
+  
   product_id            = var.product_id
   b2c_settings          = var.b2c_settings
 
