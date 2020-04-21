@@ -19,5 +19,14 @@ variable "deployment_package_filename" { }
 variable "apim_name" { }
 variable "api_path" { }
 variable "apim_ip_address" { }
-variable "scope" { }
 variable "product_id" { }
+variable "b2c_settings" {
+  type = object({
+
+    tenant_name   = string
+    policy_name   = string
+    scope         = string
+    header_prefix = string
+
+  })
+}

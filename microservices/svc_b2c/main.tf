@@ -1,6 +1,4 @@
 
-
-
 locals {
 
   required_settings = {
@@ -11,7 +9,6 @@ locals {
   }
   combined_settings = merge(local.required_settings, var.app_settings)
 }
-
 
 module "api_fn" {
   
