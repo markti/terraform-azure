@@ -1,5 +1,5 @@
 
-/*
+
 module "cosmosdb_account" {
   
   source                = "../../db/cosmos/account"
@@ -29,4 +29,3 @@ module "cosmosdb_database" {
   throughput            = 400
 
 }
-*/
