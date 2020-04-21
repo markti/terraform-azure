@@ -35,6 +35,6 @@ module "frontdoor" {
   location              = var.location
   frontend_hostname     = var.frontend_hostname
   backend_fqdn          = module.api_management.gateway_url
-  backend_hostname      = var.frontend_hostname
-  
+  backend_host_header   = var.frontend_hostname
+
 }
