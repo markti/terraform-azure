@@ -24,7 +24,7 @@ resource "azurerm_api_management_api_policy" "api_policy" {
       <openid-config url="https://${var.b2c_settings.tenant_name}.b2clogin.com/${var.b2c_settings.tenant_name}.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=${var.b2c_settings.policy_name}" />
       <required-claims>
           <claim name="aud">
-              <value>${var.b2c_settings.client_id}</value>
+              <value>${var.b2c_settings.scope}</value>
           </claim>
       </required-claims>
     </validate-jwt>
