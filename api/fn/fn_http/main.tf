@@ -19,7 +19,7 @@ resource "azurerm_function_app" "function_app" {
   version                   = var.azure_function_version
 
   app_settings = local.combined_settings
-
+/*
   site_config {
 
     ip_restriction {
@@ -29,7 +29,7 @@ resource "azurerm_function_app" "function_app" {
     }
 
   }
-
+*/
   tags = {
     app = var.app_name
     env = var.env_name
