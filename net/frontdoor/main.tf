@@ -38,7 +38,7 @@ resource "azurerm_frontdoor" "frontdoor" {
 
   frontend_endpoint {
     name                              = "PrimaryEndpoint"
-    host_name                         = var.frotnend_hostname
+    host_name                         = var.frontend_hostname
     custom_https_provisioning_enabled = false
   }
 }
