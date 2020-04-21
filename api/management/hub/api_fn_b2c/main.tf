@@ -1,6 +1,6 @@
 
 
-module "fn_apim_api_aad" {
+module "fn_apim_api_b2c" {
   
   source                = "../api_b2c"
   
@@ -12,8 +12,8 @@ module "fn_apim_api_aad" {
   path                  = var.path
   primary_protocol      = var.primary_protocol
   backend_name          = module.fn_apim_backend.name
-  scope                 = var.scope
   product_id            = var.product_id
+  b2c_settings          = var.b2c_settings
 
 }
 
