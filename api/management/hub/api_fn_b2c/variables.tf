@@ -25,7 +25,6 @@ variable "primary_protocol" {
   type = string
   default = "https"
 }
-variable "scope" { }
 variable "product_id" { }
 
 variable "b2c_settings" {
