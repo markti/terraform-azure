@@ -33,6 +33,7 @@ module "frontdoor" {
   name                  = "${var.app_name}-${var.env_name}"
   resource_group_name   = var.resource_group_name
   location              = var.location
+  
   frontend_hostname     = var.frontend_hostname
   backend_fqdn          = module.api_management.gateway_url
   backend_host_header   = var.frontend_hostname
