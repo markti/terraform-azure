@@ -4,14 +4,13 @@ output "hosting_plan_id" {
 output "storage_connection_string" {
   value = module.api_hosting_plan.storage_connection_string
 }
-/*
+
 output "database_connection_string" {
   value = module.cosmosdb_account.connection_strings[0]
 }
 output "database_name" {
   value = module.cosmosdb_database.name
 }
-*/
 
 output "instrumentation_key" {
   value = module.appinsights.instrumentation_key
