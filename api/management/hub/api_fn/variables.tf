@@ -23,3 +23,4 @@ variable "primary_protocol" {
   type = string
   default = "https"
 }
+variable "product_id" { }
