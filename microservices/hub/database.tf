@@ -29,3 +29,16 @@ module "cosmosdb_database" {
   throughput            = 400
 
 }
+
+
+module "secret_cosmosdb_connection_string" {
+  
+  source                = "../../security/secret"
+
+  app_name              = var.app_name
+  env_name              = var.env_name
+  
+  name                  = "CosmosDb-ConnectionString"
+  value                 = module.cosmosdb_account.connection_strings[0]
+
+}
