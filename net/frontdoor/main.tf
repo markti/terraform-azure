@@ -17,6 +17,7 @@ resource "azurerm_frontdoor" "frontdoor" {
 
   backend_pool_load_balancing {
     name = "baseline"
+    additional_latency_milliseconds = 1000
   }
 
   backend_pool_health_probe {
@@ -40,6 +41,6 @@ resource "azurerm_frontdoor" "frontdoor" {
   frontend_endpoint {
     name                              = "PrimaryEndpoint"
     host_name                         = var.frontend_hostname
-    custom_https_provisioning_enabled = false
+    custom_https_provisioning_enabled = true
   }
 }
