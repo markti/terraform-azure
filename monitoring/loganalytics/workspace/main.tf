@@ -6,6 +6,8 @@ resource "azurerm_log_analytics_workspace" "workspace" {
   retention_in_days   = 30
 }
 
+
+/*
 resource "azurerm_log_analytics_solution" "solution_vminsights" {
   solution_name         = "VMInsights"
   location              = var.location
@@ -19,6 +21,7 @@ resource "azurerm_log_analytics_solution" "solution_vminsights" {
     promotion_code  = ""
   }
 }
+*/
 
 /*
 resource "azurerm_log_analytics_solution" "solution" {
