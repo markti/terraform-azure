@@ -1,4 +1,4 @@
-
+/*
 module "fn_apim_api" {
   
   source                = "../../api/management/hub/api_fn_b2c"
@@ -16,3 +16,4 @@ module "fn_apim_api" {
   b2c_settings          = var.b2c_settings
 
 }
+*/

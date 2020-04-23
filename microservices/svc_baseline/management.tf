@@ -1,4 +1,4 @@
-
+/*
 module "fn_apim_api" {
   
   source                = "../../api/management/hub/api_fn"
@@ -14,3 +14,4 @@ module "fn_apim_api" {
   product_id            = var.product_id
 
 }
+*/
