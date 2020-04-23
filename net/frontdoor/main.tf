@@ -6,9 +6,9 @@ resource "azurerm_frontdoor" "frontdoor" {
 
   routing_rule {
     name               = "PrimaryRoutingRules"
-    accepted_protocols = ["Http", "Https"]
-    patterns_to_match  = ["/*"]
-    frontend_endpoints = ["PrimaryEndpoint"]
+    accepted_protocols = [ "Https" ]
+    patterns_to_match  = [ "/*" ]
+    frontend_endpoints = [ "PrimaryEndpoint" ]
     forwarding_configuration {
       forwarding_protocol = "MatchRequest"
       backend_pool_name   = "PrimaryBackend"
