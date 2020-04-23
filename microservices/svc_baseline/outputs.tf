@@ -9,6 +9,3 @@ output "function_name" {
 output "function_key" {
     value = module.api_fn.function_key
 }
-output "function_eventgrid_key" {
-    value = module.api_fn.eventgrid_key
-}
