@@ -23,6 +23,7 @@ resource "azurerm_frontdoor" "frontdoor" {
   backend_pool_health_probe {
     name      = "baseline"
     protocol  = "Https"
+    path      = var.backend_healthprobe_path
   }
 
   backend_pool {

@@ -21,3 +21,4 @@ variable "frontend_hostname" {
  }
 variable "backend_host_header" { }
 variable "backend_fqdn" { }
+variable "backend_healthprobe_path" { }
