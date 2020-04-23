@@ -15,7 +15,7 @@ locals {
 
 module "api_fn" {
   
-  source                        = "../../api/fn/fn_http"
+  source                        = "../../api/fn/fn_eventgrid"
   
   app_name                      = var.app_name
   env_name                      = var.env_name
@@ -30,7 +30,7 @@ module "api_fn" {
   app_settings                  = local.combined_settings
 
 }
-/*
+
 module "api_eventgrid_topic" {
   
   source                        = "../../messaging/eventgrid/topic"
@@ -43,4 +43,3 @@ module "api_eventgrid_topic" {
   location                      = var.location
 
 }
-*/
