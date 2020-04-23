@@ -16,10 +16,6 @@ variable "deployment_storage_account_name" { }
 variable "deployment_storage_container" { }
 variable "deployment_package_sas" { }
 variable "deployment_package_filename" { }
-variable "apim_name" { }
-variable "api_path" { }
-variable "apim_ip_address" { }
-variable "product_id" { }
 variable "b2c_settings" {
   type = object({
 
