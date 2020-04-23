@@ -42,5 +42,10 @@ resource "azurerm_frontdoor" "frontdoor" {
     name                              = "PrimaryEndpoint"
     host_name                         = var.frontend_hostname
     custom_https_provisioning_enabled = true
+    
+    custom_https_configuration {
+      certificate_source    = "FrontDoor"
+      minimum_tls_version   = "1.2"
+    }
   }
 }
