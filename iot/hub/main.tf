@@ -1,6 +1,6 @@
 
 resource "azurerm_iothub" "iot_hub" {
-  name                = "${var.name}"
+  name                = "${var.name}-${var.location_suffix}"
   resource_group_name = var.resource_group_name
   location            = var.location
 
@@ -12,7 +12,7 @@ resource "azurerm_iothub" "iot_hub" {
 }
 
 resource "azurerm_iothub_dps" "iot_hub_prov" {
-  name                = "${var.name}-provision"
+  name                = "${var.name}-provision-${var.location_suffix}"
   resource_group_name = var.resource_group_name
   location            = var.location
 
