@@ -8,7 +8,7 @@ resource "azurerm_frontdoor" "frontdoor" {
     name               = "PrimaryRoutingRules"
     accepted_protocols = [ "Https" ]
     patterns_to_match  = [ "/*" ]
-    frontend_endpoints = [ "" ]
+    frontend_endpoints = [ "PrimaryEndpoint" ]
     forwarding_configuration {
       forwarding_protocol = "MatchRequest"
       backend_pool_name   = "PrimaryBackend"
@@ -48,4 +48,5 @@ resource "azurerm_frontdoor" "frontdoor" {
       certificate_source    = "FrontDoor"
     }
   }
+
 }
