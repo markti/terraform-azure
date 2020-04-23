@@ -28,7 +28,6 @@ module "api_fn" {
   azure_function_version        = var.azure_function_version
   worker_runtime                = var.worker_runtime
   app_settings                  = local.combined_settings
-  apim_ip_address               = var.apim_ip_address
 
 }
 

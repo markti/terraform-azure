@@ -30,4 +30,3 @@ variable "worker_runtime" {
 }
 variable "app_name" { }
 variable "env_name" { }
-variable "apim_ip_address" { }
