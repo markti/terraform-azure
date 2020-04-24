@@ -34,7 +34,7 @@ module "fn_apim_backend" {
 
 module "fn_key" {
   
-  source                = "../property"
+  source                = "../named_value"
   
   resource_group_name   = var.resource_group_name
   apim_name             = var.apim_name
