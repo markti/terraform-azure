@@ -26,3 +26,4 @@ variable "primary_protocol" {
 }
 variable "scope" { }
 variable "product_id" { }
+variable "header_prefix" { }

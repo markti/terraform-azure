@@ -14,6 +14,7 @@ module "fn_apim_api_aad" {
   backend_name          = module.fn_apim_backend.name
   scope                 = var.scope
   product_id            = var.product_id
+  header_prefix         = var.header_prefix
 
 }
 
