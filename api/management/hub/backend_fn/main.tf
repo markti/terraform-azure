@@ -9,7 +9,7 @@ resource "azurerm_api_management_backend" "apim_backend" {
 
   credentials {
     header = {
-      "x-functions-key" = "\{\{${var.function_key_named_value}\}\}",
+      "x-functions-key" = var.function_key,
     }
   }
 

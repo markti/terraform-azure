@@ -26,7 +26,7 @@ module "fn_apim_backend" {
   apim_name             = var.apim_name
   name                  = var.name
   function_name         = var.function_name
-  function_key          = module.fn_key.name
+  function_key          = var.function_key
   protocol              = "http"
 
 }
