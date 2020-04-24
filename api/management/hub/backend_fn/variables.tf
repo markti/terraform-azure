@@ -17,7 +17,7 @@ variable "resource_group_name" { }
 variable "apim_name" { }
 variable "name" { }
 variable "function_name" { }
-variable "function_key" { }
+variable "function_key_named_value" { }
 variable "protocol" { 
   default = "http"
 }
