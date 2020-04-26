@@ -43,3 +43,29 @@ module "api_eventgrid_topic" {
   location                      = var.location
 
 }
+
+module "secret_topic_endpoint" {
+  
+  source                = "github.com/markti/terraform-azure/security/secret"
+
+  app_name                      = var.app_name
+  env_name                      = var.env_name
+  keyvault_id           = var.keyvault_id
+  
+  name                  = "${var.name}-eventgrid-endpoint"
+  value                 = module.api_eventgrid_topic.endpoint
+
+}
+
+module "secret_topic_accesskey" {
+  
+  source                = "github.com/markti/terraform-azure/security/secret"
+
+  app_name                      = var.app_name
+  env_name                      = var.env_name
+  keyvault_id           = var.keyvault_id
+  
+  name                  = "${var.name}-eventgrid-accesskey"
+  value                 = module.api_eventgrid_topic.primary_access_key
+
+}
