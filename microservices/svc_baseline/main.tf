@@ -24,7 +24,7 @@ module "api_fn" {
   resource_group_name           = var.resource_group_name
   location                      = var.location
   app_service_plan_id           = var.hosting_plan_id
-  storage_connection_string     = var.storage_connection_string
+  storage_connection_string     = var.hosting_storage_connection_string
   azure_function_version        = var.azure_function_version
   worker_runtime                = var.worker_runtime
   app_settings                  = local.combined_settings
