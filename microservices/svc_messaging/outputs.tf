@@ -12,3 +12,6 @@ output "function_key" {
 output "function_eventgrid_key" {
     value = module.api_fn.eventgrid_key
 }
+output "hostname" {
+    value = "${module.api_fn.hostname}"
+}
