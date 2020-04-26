@@ -5,7 +5,7 @@ variable "app_name" { }
 variable "env_name" { }
 variable "service_name" { }
 variable "hosting_plan_id" { }
-variable "storage_connection_string" { }
+variable "hosting_storage_connection_string" { }
 variable "azure_function_version" { }
 variable "worker_runtime" { }
 variable "app_settings" {
