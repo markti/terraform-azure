@@ -15,3 +15,6 @@ output "function_eventgrid_key" {
 output "hostname" {
     value = "${module.api_fn.hostname}"
 }
+output "topic_id" {
+    value = "${module.api_eventgrid_topic.id}"
+}
