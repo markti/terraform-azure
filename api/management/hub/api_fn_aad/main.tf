@@ -31,7 +31,7 @@ module "fn_apim_backend" {
 
 }
 
-
+/*
 module "fn_key" {
   
   source                = "../named_value"
@@ -43,3 +43,4 @@ module "fn_key" {
   secret                = "true"
 
 }
+*/
