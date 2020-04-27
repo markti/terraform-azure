@@ -19,7 +19,7 @@ locals {
                 <method>*</method>
             </allowed-methods>
             <allowed-headers>
-                ${local.allowed_headers_xml}
+                <header>*</header>
             </allowed-headers>
         </cors>
 XML
