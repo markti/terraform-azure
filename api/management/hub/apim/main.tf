@@ -26,7 +26,7 @@ XML
 
 }
 
-
+/*
 resource "azurerm_api_management_diagnostic" "apim_diagnostic" {
 
   identifier          = "applicationinsights"
@@ -35,3 +35,4 @@ resource "azurerm_api_management_diagnostic" "apim_diagnostic" {
   enabled             = true
 
 }
+*/
