@@ -1,7 +1,7 @@
 
 locals {
 
-    default_cors_headers = [ "Access-Control-Allow-Origin" ]
+    default_cors_headers = [ "Authorization" ]
     default_subscription_headers = [ "Ocp-Apim-Subscription-Key", "Ocp-Apim-Trace" ]
     merged_cors_default_headers = concat(local.default_cors_headers, local.default_subscription_headers)
     merged_cors_allowed_headers = concat(local.merged_cors_default_headers, var.cors_allowed_headers)
