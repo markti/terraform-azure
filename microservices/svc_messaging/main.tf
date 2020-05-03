@@ -52,7 +52,7 @@ module "secret_topic_endpoint" {
   env_name                      = var.env_name
   keyvault_id           = var.keyvault_id
   
-  name                  = "Eventgrid-${var.service_name}-Endpoint"
+  name                  = "EventGrid-${var.service_name}-Endpoint"
   value                 = module.api_eventgrid_topic.endpoint
 
 }
@@ -65,7 +65,7 @@ module "secret_topic_accesskey" {
   env_name                      = var.env_name
   keyvault_id           = var.keyvault_id
   
-  name                  = "Eventgrid-${var.service_name}-AccessKey"
+  name                  = "EventGrid-${var.service_name}-AccessKey"
   value                 = module.api_eventgrid_topic.primary_access_key
 
 }
