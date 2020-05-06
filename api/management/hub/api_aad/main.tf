@@ -34,6 +34,9 @@ resource "azurerm_api_management_api_policy" "api_policy" {
     <set-header name="${var.header_prefix}_EMAIL" exists-action="append">
         <value>@(context.Request.Headers["Authorization"].First().Split(' ')[1].AsJwt()?.Claims["unique_name"].FirstOrDefault())</value>
     </set-header>
+    <set-header name="${var.header_prefix}_TID" exists-action="append">
+        <value>@(context.Request.Headers["Authorization"].First().Split(' ')[1].AsJwt()?.Claims["tid"].FirstOrDefault())</value>
+    </set-header>
     <set-backend-service id="tf-generated-policy" backend-id="${var.backend_name}" />
     <base />
   </inbound>    
