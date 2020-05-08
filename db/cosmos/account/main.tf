@@ -20,6 +20,12 @@ resource "azurerm_cosmosdb_account" "account" {
     location          = var.location
     failover_priority = 0
   }
+  
+  tags = {
+    app = var.app_name
+    env = var.env_name
+  }
+
 }
 
 resource "random_string" "random" {

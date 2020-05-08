@@ -24,6 +24,11 @@ resource "azurerm_api_management" "apim" {
 XML
   }
 
+  tags = {
+    app = var.app_name
+    env = var.env_name
+  }
+
 }
 
 /*
