@@ -6,4 +6,9 @@ resource "azurerm_cognitive_account" "cognitive_speech" {
 
   sku_name = "S0"
 
+  tags = {
+    app = var.app_name
+    env = var.env_name
+  }
+
 }
