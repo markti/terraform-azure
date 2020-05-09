@@ -50,13 +50,10 @@ resource "azurerm_frontdoor" "frontdoor" {
   }
 
   frontend_endpoint {
-    name                              = "PrimaryEndpoint"
+    name                              = "DefaultEndpoint"
     host_name                         = "${var.name}.azurefd.net"
     custom_https_provisioning_enabled = false
-
-    custom_https_configuration {
-      certificate_source    = "FrontDoor"
-    }
+    
   }
 
 }
