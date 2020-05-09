@@ -48,5 +48,11 @@ resource "azurerm_frontdoor" "frontdoor" {
       certificate_source    = "FrontDoor"
     }
   }
+  
+  frontend_endpoint {
+    name                              = "DefaultFrontend"
+    host_name                         = "${var.name}.azurefd.net"
+    custom_https_provisioning_enabled = false
+  }
 
 }
