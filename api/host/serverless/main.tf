@@ -25,6 +25,6 @@ module "func_storage" {
   env_name              = var.env_name
   name                  = "func"
 
-  type                  = "ZRS"
+  type                  = "GRS"
 
 }
