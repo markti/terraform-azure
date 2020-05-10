@@ -1,11 +1,11 @@
 resource "azurerm_storage_account" "storage_account" {
 
-  name                = "${var.name}${random_string.random.result}"
-  resource_group_name = var.resource_group_name
+  name                      = "${var.name}${random_string.random.result}"
+  resource_group_name       = var.resource_group_name
 
-  location                 = var.location
-  account_tier             = var.tier
-  account_replication_type = var.type
+  location                  = var.location
+  account_tier              = var.tier
+  account_replication_type  = var.type
 
   tags = {
     app = var.app_name
