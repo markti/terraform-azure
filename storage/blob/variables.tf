@@ -4,4 +4,4 @@ variable "app_name" { }
 variable "env_name" { }
 variable "name" { }
 variable "tier" { default = "Standard" }
-variable "type" { default = "LRS" }
+variable "type" { default = "GRS" }
