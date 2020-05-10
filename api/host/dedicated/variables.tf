@@ -14,5 +14,5 @@ variable "app_name" { }
 variable "env_name" { }
 
 variable "storage_type" { 
-    default = "ZRS" 
+    default = "GRS" 
 }
