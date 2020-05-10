@@ -12,3 +12,7 @@ variable "resource_group_name" {
 }
 variable "app_name" { }
 variable "env_name" { }
+
+variable "storage_type" { 
+    default = "ZRS" 
+}
