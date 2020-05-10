@@ -12,4 +12,9 @@ resource "azurerm_app_service" "webapp" {
     default_documents        = [ "index.html" ]
   }
 
+  tags = {
+    app = var.app_name
+    env = var.env_name
+  }
+
 }
