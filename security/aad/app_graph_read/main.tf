@@ -5,6 +5,7 @@ resource "azuread_application" "aad_app" {
   reply_urls                  = var.reply_urls
   available_to_other_tenants  = var.available_to_other_tenants
   oauth2_allow_implicit_flow  = var.allow_implicit_flow
+  group_membership_claims     = "SecurityGroup"
 
   required_resource_access {
     
