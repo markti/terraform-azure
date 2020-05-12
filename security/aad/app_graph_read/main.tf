@@ -8,22 +8,22 @@ resource "azuread_application" "aad_app" {
 
   required_resource_access {
     
-    resource_app_id = "00000003-0000-0000-c000-000000000000" -> null
+    resource_app_id = "00000003-0000-0000-c000-000000000000"
     
     resource_access {
-      id   = "5b567255-7703-4780-807c-7be8301ae99b" -> null
-      type = "Role" -> null
+      id   = "5b567255-7703-4780-807c-7be8301ae99b"
+      type = "Role"
     }
     resource_access {
-      id   = "98830695-27a2-44f7-8c18-0c3ebc9698f6" -> null
-      type = "Role" -> null
+      id   = "98830695-27a2-44f7-8c18-0c3ebc9698f6"
+      type = "Role"
     }
     resource_access {
-      id   = "df021288-bdef-4463-88db-98f22de89214" -> null
-      type = "Role" -> null
+      id   = "df021288-bdef-4463-88db-98f22de89214"
+      type = "Role"
     }
   }
-  
+
 }
 
 resource "random_password" "aad_app" {
