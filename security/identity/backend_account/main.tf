@@ -1,7 +1,7 @@
 
 module "app" {
   
-  source  = "../../aad/app"
+  source  = "../../aad/app_graph_read"
   name    = var.name
   identifier_uris  = [ var.application_id_uri ] 
 
